@@ -13,14 +13,16 @@ This project implements an unsupervised Machine Learning pipeline to segment e-c
 
 ## 📁 Repository Structure
 ```text
-├── data/
-│   └── ecommerce_transactions.csv
-├── notebooks/
-│   └── customer_segmentation.ipynb
 ├── charts/
 │   ├── elbow_and_silhouette_analysis.png
 │   ├── customer_segments_2d_scatter.png
 │   └── segment_distribution_barchart.png
+├── data/
+│   └── ecommerce_transactions.csv
+├── notebooks/
+│   └── customer_segmentation.ipynb
+├── report/
+│   └── findings_and_recommendations.md
 ├── ml_core.py
 ├── run_segmentation.py
 ├── requirements.txt
@@ -29,11 +31,21 @@ This project implements an unsupervised Machine Learning pipeline to segment e-c
 
 ---
 
-## 👥 Customer Personas Identified
-- **Champions / High-Value VIPs**: Highest spend, highest order frequency, lowest recency.
-- **Loyal Core Customers**: Consistent transaction frequency with steady spend.
-- **Recent / Potential Loyalists**: New customers with low recency and growing order activity.
-- **At-Risk / Hibernating**: High dormancy with low historical frequency requiring win-back campaigns.
+## 📈 Visualizations & Key Charts
+
+### 1. Optimal Cluster Evaluation (Elbow & Silhouette)
+![Elbow & Silhouette Analysis](charts/elbow_and_silhouette_analysis.png)
+
+### 2. 2D Cluster Scatter Projections
+![2D Customer Clusters](charts/customer_segments_2d_scatter.png)
+
+### 3. Customer Segment Distribution
+![Segment Distribution](charts/segment_distribution_barchart.png)
+
+---
+
+## 📄 Detailed Findings & Playbook
+For the complete customer persona breakdown and retention marketing strategy, see **[report/findings_and_recommendations.md](report/findings_and_recommendations.md)**.
 
 ---
 
